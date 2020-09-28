@@ -15,7 +15,6 @@ def main():
     '''
     メインの処理
     Yahooの検索エンジンで入力したキーワードを検索し、1番目にヒットしたページのURLを取得
-    クリックしてページに遷移し、前ページに戻る
     '''
 
     driver = webdriver.Chrome(chromedriver_path)  # ChromeのWebDriverオブジェクトを作成
@@ -54,8 +53,6 @@ def get_url(driver):
     object.click()  # a要素をクリック
     time.sleep(2)  # 2秒待機
     url = driver.current_url  # 遷移ページからURLを取得
-    driver.back()  # 前ページに戻る
-    time.sleep(2)  # 2秒待機
     return url
 
 
