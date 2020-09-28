@@ -1,7 +1,7 @@
 # 概要
 
 ・Yahoo! JAPANのトップページからターミナルで入力したキーワードを検索  
-　[https://www.yahoo.co.jp]
+　https://www.yahoo.co.jp
 
 ・1番目にヒットしたページに遷移しURLを取得後、前ページに戻る（遷移ページからURLを取得するのが条件）
 
