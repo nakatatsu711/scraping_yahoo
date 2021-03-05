@@ -18,5 +18,5 @@ Python：3.6.9
 # 実行方法
 
 ```
-python scraping_yahoo.py キーワード
+$ python scraping_yahoo.py キーワード
 ```
