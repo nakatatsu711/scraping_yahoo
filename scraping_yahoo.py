@@ -23,7 +23,7 @@ def main():
     assert URL_TITLE in driver.title  # タイトルに'Yahoo! JAPAN'が含まれていることを確認
 
     key_list = []
-    for key in sys.argv:  # ターミナルに入力した検索キーワードのリスト
+    for key in sys.argv:  # コマンドラインに入力した検索キーワードのリスト
         if '.py' in key:  # 最初の要素はファイル名なので除外
             continue
         key_list.append(key)
@@ -40,7 +40,7 @@ def main():
     print('検索キーワード ->', keyword)
     print(url)  # 結果を出力
 
-    driver.quit()  # ブラウザーを閉じる
+    driver.quit()  # ブラウザを閉じる
 
 
 def get_url(driver):
